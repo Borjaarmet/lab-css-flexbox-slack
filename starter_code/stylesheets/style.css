@@ -9,7 +9,9 @@ nav grey: #5b5e6d;
 */
 
 @media (max-width: 768px) {
-    body {
+    header,
+    main,
+    footer {
         margin: 0 20px;
     }
 }
@@ -22,28 +24,26 @@ nav grey: #5b5e6d;
     top: 0;
     border: 1px solid gray;
     background-color: white;
-    height: 70px;
+    height: 60px;
+    padding: 10px 20px;
 }
 
 .image-navbar {
     width: 20%;
-    padding-left: 15px;
+    padding-left: 10px;
     align-self: flex-start;
     align-items: center;
 }
 
-.menu-navbar {
-    float: right;
-    font-size: 0.5rem;
-    padding-right: 20px;
-    padding-top: 5px;
-    text-align: center;
+.list-navbar {
+    display: none;
 }
 
 .fas {
-    width: 10%;
-    padding-right: 5px;
-    padding-top: 15px;
+    max-width: 100%;
+    margin-right: 20px;
+    padding-right: 25px;
+    padding-top: 25px;
 }
 
 .fas:hover {
@@ -56,6 +56,7 @@ h1 {
     font-size: 25px;
     color: #2C303F;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .paragraph-1 {
@@ -79,7 +80,7 @@ button {
 }
 
 .button-getStarted {
-    background-color: blue;
+    background-color: #192592;
     color: white;
     font-weight: bold;
 }
@@ -119,7 +120,7 @@ main {
     width: 90%;
     padding: 15px;
     margin-left: 15px;
-    color: blue;
+    color: #192592;
     font-weight: bold;
     margin-bottom: 40px;
 }
@@ -152,7 +153,7 @@ h3 {
 }
 
 .button-getStarted-box {
-    background-color: blue;
+    background-color: #192592;
     color: white;
     font-weight: bold;
 }
@@ -226,7 +227,9 @@ ul .title {
 }
 
 @media (min-width: 768px) and ( max-width: 961px) {
-    body {
+    header,
+    main,
+    footer {
         margin: 0 20px;
     }
     .navbar {
@@ -237,18 +240,21 @@ ul .title {
         top: 0;
         border: 1px solid gray;
         background-color: white;
-        height: 70px;
+        height: 50px;
+        padding: 20px 0 30px 30px;
     }
     .image-navbar {
         max-width: 15%;
-        padding-left: 15px;
-        align-self: flex-start;
-        align-items: center;
+        padding-left: 10px;
+    }
+    .list-navbar {
+        display: none;
     }
     .fas {
-        width: 30px;
-        padding-right: 5px;
-        padding-top: 15px;
+        max-width: 100%;
+        margin-right: 20px;
+        padding-right: 25px;
+        padding-top: 25px;
     }
     .fas:hover {
         background: darken(#8e24aa, 12%);
@@ -259,6 +265,7 @@ ul .title {
         font-size: 60px;
         color: #2C303F;
         font-weight: bold;
+        margin-top: 30px;
     }
     .paragraph-1 {
         font-size: 20px;
@@ -280,7 +287,7 @@ ul .title {
         width: 50%;
     }
     .button-getStarted {
-        background-color: blue;
+        background-color: #192592;
         color: white;
         font-weight: bold;
     }
@@ -315,12 +322,12 @@ ul .title {
         width: 30%;
         margin-left: 270px;
         margin-bottom: 40px;
-        color: blue;
+        color: #192592;
         padding: 20px;
         background-color: white;
         font-weight: bold;
         border: 1px solid gray;
-        border radius: 5px;
+        border-radius: 5px;
     }
     .logos {
         justify-content: center;
@@ -348,7 +355,7 @@ ul .title {
         margin: 40px 0 50px 100px;
     }
     .button-getStarted-box {
-        background-color: blue;
+        background-color: #192592;
         color: white;
         font-weight: bold;
         width: 25%;
@@ -415,14 +422,403 @@ ul .title {
     }
 }
 
-@media (min-width: 961px)and(max-width:1024px) {
+@media (min-width: 961px) and (max-width:1024px) {
+    header,
+    main,
+    footer {
+        margin: 0 20px;
+    }
     .navbar {
-        background-color: crimson;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        flex-wrap: wrap;
+        top: 0;
+        border: 1px solid gray;
+        background-color: white;
+        height: 70px;
+        width: 100%;
+    }
+    .image-navbar {
+        max-width: 15%;
+        padding-left: 15px;
+        align-self: flex-start;
+        align-items: center;
+    }
+    .list-navbar {
+        display: none;
+    }
+    .fas {
+        width: 30px;
+        padding-right: 5px;
+        padding-top: 15px;
+    }
+    .fas:hover {
+        background: darken(#8e24aa, 12%);
+        cursor: pointer;
+    }
+    h1 {
+        padding: 80px 0 20px 0;
+        font-size: 60px;
+        color: #2C303F;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    .paragraph-1 {
+        font-size: 20px;
+        text-align: justify;
+        padding-bottom: 30px;
+        color: #5b5e6d;
+    }
+    button {
+        padding: 15px;
+        width: 30%;
+        margin-bottom: 10px;
+        border: 1px gray;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    .button-email {
+        text-align: left;
+        color: gray;
+        width: 50%;
+    }
+    .button-getStarted {
+        background-color: #192592;
+        color: white;
+        font-weight: bold;
+    }
+    .paragraph-2 {
+        text-align: left;
+        color: #2C303F;
+        margin: 10px 0 30px 0;
+    }
+    .image-talking {
+        max-width: 50%;
+        margin-left: 150px;
+    }
+    main {
+        background-color: #f3f3f3;
+        display: flex;
+    }
+    h2 {
+        color: #2C303F;
+        font-size: 45px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .paragraph-3 {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+    .button-discover {
+        display: block;
+        width: 30%;
+        margin-left: 330px;
+        margin-bottom: 40px;
+        color: #192592;
+        padding: 20px;
+        background-color: white;
+        font-weight: bold;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    .logos {
+        width: 20%;
+    }
+    .list.logos {
+        padding-bottom: 60px;
+    }
+    hr {
+        display: none;
+    }
+    .box {
+        display: flex;
+        justify-content: baseline;
+        margin: 20px;
+    }
+    .title-box {
+        text-align: left;
+        margin: 10px 50px 20px 0;
+        padding-top: 40px;
+    }
+    .button-email-box {
+        text-align: left;
+        color: gray;
+        width: 20%;
+        margin: 40px 0 50px 280px;
+    }
+    .button-getStarted-box {
+        background-color: #192592;
+        color: white;
+        font-weight: bold;
+        width: 20%;
+        margin: 40px 0 50px 10px;
+    }
+    .hr2 {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .logo-slack {
+        width: 100px;
+        position: absolute;
+    }
+    .lists {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    li {
+        color: #5b5e6d;
+        line-height: 1.5em
+    }
+    ul .title {
+        color: #2C303F;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .each-list {
+        width: 20%;
+    }
+    .footer {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        font-size: 0.7em;
+        font-weight: bold;
+        color: #5b5e6d;
+        background-color: #f3f3f3;
+    }
+    .ul-footer li {
+        display: inline;
+        padding-left: 30px;
+    }
+    .usa-flag {
+        height: 20px;
+        width: 20px;
+        padding-right: 15px;
+        padding-top: 0px
+    }
+    .english-US {
+        width: 20%;
+        align-items: baseline;
+        padding: 20px 0;
+        display: flex;
+    }
+    .social {
+        width: 15%;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 
 @media (min-width: 1024px) {
+    header,
+    main,
+    footer {
+        margin: 0 20px;
+    }
     .navbar {
-        background-color: crimson;
+        display: flex;
+        position: fixed;
+        top: 0;
+        border: 1px solid gray;
+        background-color: white;
+        height: 50px;
+        width: 100%;
+    }
+    .image-navbar {
+        padding-left: 15px;
+        align-self: flex-start;
+        align-items: center;
+        width: 10%;
+    }
+    .list-navbar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        margin-right: 150px;
+        font-size: 18px;
+        color: #5b5e6d;
+    }
+    .list-navbar li:last-child {
+        border: 1px solid gray;
+        border-radius: 3px;
+        padding: 4px;
+        position: absolute;
+        right: 30px;
+        bottom: 12px;
+    }
+    .list-navbar li {
+        margin-right: 35px;
+        font-weight: bold;
+    }
+    .fas {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 150px
+    }
+    .header-content {
+        padding-right: 10px;
+        padding-left: 30px;
+    }
+    h1 {
+        padding: 0 0 20px 0;
+        font-size: 80px;
+        color: #2C303F;
+        font-weight: bold;
+    }
+    .paragraph-1 {
+        font-size: 20px;
+        text-align: justify;
+        padding-bottom: 30px;
+        color: #5b5e6d;
+    }
+    .button-email {
+        display: none;
+    }
+    .button-getStarted {
+        background-color: #192592;
+        color: white;
+        font-weight: bold;
+        width: 40%;
+        padding: 20px
+    }
+    .paragraph-2 {
+        text-align: left;
+        color: #2C303F;
+        margin: 10px 0 30px 0;
+    }
+    .image-talking {
+        margin-right: 70px;
+        height: 400px;
+    }
+    main {
+        background-color: #f3f3f3;
+        display: flex;
+        padding-bottom: 40px;
+    }
+    h2 {
+        color: #2C303F;
+        font-size: 45px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .paragraph-3 {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+    .button-discover {
+        display: block;
+        width: 30%;
+        margin-left: 420px;
+        margin-bottom: 40px;
+        color: #192592;
+        padding: 20px;
+        background-color: white;
+        font-weight: bold;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    .logos {
+        width: 20%;
+    }
+    .list.logos {
+        padding-bottom: 20px;
+    }
+    hr {
+        display: none;
+    }
+    .box {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .title-box {
+        text-align: left;
+        margin: 10px 50px 20px 0;
+        padding-top: 40px;
+    }
+    .button-email-box {
+        display: none;
+    }
+    .button-getStarted-box {
+        background-color: #192592;
+        color: white;
+        font-weight: bold;
+        width: 15%;
+        margin: 40px 0 50px 10px;
+    }
+    .hr2 {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+    .logo-slack {
+        width: 100px;
+        position: absolute;
+    }
+    .lists {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin-bottom: 80px;
+    }
+    li {
+        color: #5b5e6d;
+        line-height: 1.5em
+    }
+    ul .title {
+        color: #2C303F;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .each-list {
+        width: 20%;
+    }
+    .footer {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        font-size: 0.7em;
+        font-weight: bold;
+        color: #5b5e6d;
+        background-color: #f3f3f3;
+    }
+    .ul-footer li {
+        display: inline;
+        padding-left: 30px;
+    }
+    .usa-flag {
+        height: 20px;
+        width: 20px;
+        padding-right: 15px;
+        padding-top: 0px
+    }
+    .english-US {
+        width: 20%;
+        align-items: baseline;
+        padding: 20px 0;
+        display: flex;
+    }
+    .social {
+        width: 15%;
+        display: flex;
+        justify-content: space-evenly;
     }
 }

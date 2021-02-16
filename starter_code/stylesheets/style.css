@@ -1,7 +1,428 @@
 /*
-background-grey: #F4F3F4;
+background-grey: ;
+background-grey: ;
+background-grey: ;
 button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 20px;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    flex-wrap: wrap;
+    top: 0;
+    border: 1px solid gray;
+    background-color: white;
+    height: 70px;
+}
+
+.image-navbar {
+    width: 20%;
+    padding-left: 15px;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.menu-navbar {
+    float: right;
+    font-size: 0.5rem;
+    padding-right: 20px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.fas {
+    width: 10%;
+    padding-right: 5px;
+    padding-top: 15px;
+}
+
+.fas:hover {
+    background: darken(#8e24aa, 12%);
+    cursor: pointer;
+}
+
+h1 {
+    padding: 80px 0 20px 0;
+    font-size: 25px;
+    color: #2C303F;
+    font-weight: bold;
+}
+
+.paragraph-1 {
+    font-size: 16px;
+    text-align: justify;
+    padding-bottom: 30px;
+    color: #5b5e6d;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px gray;
+    border-radius: 5px;
+}
+
+.button-email {
+    text-align: left;
+    color: gray;
+}
+
+.button-getStarted {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.paragraph-2 {
+    text-align: center;
+    color: #2C303F;
+    margin: 10px 20px 30px 20px;
+}
+
+.image-talking {
+    max-width: 100%;
+}
+
+h2 {
+    color: #2C303F;
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 0 10px 0;
+    font-weight: bold;
+}
+
+main {
+    background-color: #f3f3f3;
+}
+
+.paragraph-3 {
+    text-align: center;
+    color: #5b5e6d;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.button-discover {
+    background-color: white;
+    border: 1px solid gray;
+    width: 90%;
+    padding: 15px;
+    margin-left: 15px;
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.logos {
+    max-width: 40%;
+    margin-left: 70px;
+    padding: 20px;
+}
+
+hr {
+    width: 80%;
+}
+
+.title-box {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C303F;
+}
+
+.button-email-box {
+    text-align: left;
+    color: gray;
+}
+
+.button-getStarted-box {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.hr2 {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.logo-slack {
+    width: 100px
+}
+
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    color: #5b5e6d;
+    line-height: 1.5em
+}
+
+ul .title {
+    color: #2C303F;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.each-list {
+    width: 50%;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: #f3f3f3;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #5b5e6d;
+}
+
+.ul-footer {
+    text-align: center;
+}
+
+.ul-footer li {
+    display: inline;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.usa-flag {
+    height: 20px;
+    width: 20px;
+}
+
+.english-US {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 768px) and ( max-width: 961px) {
+    body {
+        margin: 0 20px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        flex-wrap: wrap;
+        top: 0;
+        border: 1px solid gray;
+        background-color: white;
+        height: 70px;
+    }
+    .image-navbar {
+        max-width: 15%;
+        padding-left: 15px;
+        align-self: flex-start;
+        align-items: center;
+    }
+    .fas {
+        width: 30px;
+        padding-right: 5px;
+        padding-top: 15px;
+    }
+    .fas:hover {
+        background: darken(#8e24aa, 12%);
+        cursor: pointer;
+    }
+    h1 {
+        padding: 80px 0 20px 0;
+        font-size: 60px;
+        color: #2C303F;
+        font-weight: bold;
+    }
+    .paragraph-1 {
+        font-size: 20px;
+        text-align: justify;
+        padding-bottom: 30px;
+        color: #5b5e6d;
+    }
+    button {
+        padding: 15px;
+        width: 30%;
+        margin-bottom: 10px;
+        border: 1px gray;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    .button-email {
+        text-align: left;
+        color: gray;
+        width: 50%;
+    }
+    .button-getStarted {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+    }
+    .paragraph-2 {
+        text-align: left;
+        color: #2C303F;
+        margin: 10px 0 30px 0;
+    }
+    .image-talking {
+        max-width: 50%;
+        margin-left: 150px;
+    }
+    main {
+        background-color: #f3f3f3;
+        display: flex;
+    }
+    h2 {
+        color: #2C303F;
+        font-size: 45px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .paragraph-3 {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+    .button-discover {
+        display: block;
+        width: 30%;
+        margin-left: 270px;
+        margin-bottom: 40px;
+        color: blue;
+        padding: 20px;
+        background-color: white;
+        font-weight: bold;
+        border: 1px solid gray;
+        border radius: 5px;
+    }
+    .logos {
+        justify-content: center;
+        width: 25%;
+        margin-left: 100px;
+        padding: 20px;
+    }
+    hr {
+        display: none;
+    }
+    .box {
+        display: flex;
+        justify-content: baseline;
+        margin: 30px;
+    }
+    .title-box {
+        text-align: left;
+        margin: 10px 50px 20px 0;
+        padding-top: 40px;
+    }
+    .button-email-box {
+        text-align: left;
+        color: gray;
+        width: 25%;
+        margin: 40px 0 50px 100px;
+    }
+    .button-getStarted-box {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        width: 25%;
+        margin: 40px 0 50px 10px;
+    }
+    .hr2 {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 5px solid
+    }
+    .logo-slack {
+        width: 100px;
+        position: absolute;
+    }
+    .lists {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    li {
+        color: #5b5e6d;
+        line-height: 1.5em
+    }
+    ul .title {
+        color: #2C303F;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .each-list {
+        width: 20%;
+    }
+    .footer {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        font-size: 0.7em;
+        font-weight: bold;
+        color: #5b5e6d;
+        background-color: #f3f3f3;
+    }
+    .ul-footer li {
+        display: inline;
+        padding-left: 30px;
+    }
+    .usa-flag {
+        height: 20px;
+        width: 20px;
+        padding-right: 15px;
+        padding-top: 0px
+    }
+    .english-US {
+        width: 20%;
+        align-items: baseline;
+        padding: 20px 0;
+        display: flex;
+    }
+    .social {
+        width: 15%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 961px)and(max-width:1024px) {
+    .navbar {
+        background-color: crimson;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        background-color: crimson;
+    }
+}
